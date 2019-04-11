@@ -31,6 +31,9 @@ public class Board : MonoBehaviour
                 gem.transform.parent = this.transform;
                 gem.name = "(" + c + "," + r + " ) ";
             }
+
+            //GameObject undergem = GameObject.Find("(2,3)");
+            //Destroy(undergem);
         }
     }
     // Update is called once per frame
