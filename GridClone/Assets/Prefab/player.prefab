@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 796308777053576087}
   - component: {fileID: 796308777053576084}
   - component: {fileID: 796308777053576086}
+  - component: {fileID: 8600721668925043960}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -93,8 +94,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e37fda6e136b764ebdc68adc3081c5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  firstTouchPosition: {x: 0, y: 0}
+  finalTouchPosition: {x: 0, y: 0}
+  swipeAngle: 0
   board: {fileID: 0}
   player: {fileID: 796308777053576085}
+  othergem: {fileID: 0}
+  RestartMessage: {fileID: 0}
   columns: 0
   rows: 0
   targetX: 0
@@ -102,6 +108,32 @@ MonoBehaviour:
   steps: 6
   step: {fileID: 796308777213356618}
   ismatched: 0
+--- !u!61 &8600721668925043960
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796308777053576085}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.4166666, y: 1.4166666}
+    newSize: {x: 1.7, y: 1.7}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.4166666, y: 1.4166666}
+  m_EdgeRadius: 0
 --- !u!1 &796308777213356616
 GameObject:
   m_ObjectHideFlags: 0
