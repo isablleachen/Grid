@@ -19,12 +19,15 @@ public class Manager : MonoBehaviour
     public int targetY;
     public int steps;
     public TextMeshPro step;
+    private ScoreScript scorescript;
+    public Text Score;
 
     public bool ismatched = false;
     // Start is called before the first frame update
     void Start()
     {
         board = FindObjectOfType<Board>();
+        scorescript = FindObjectOfType<ScoreScript>();
         gem = FindObjectOfType<Gem>();
         targetX = (int)transform.position.x;
         targetY = (int)transform.position.y;
@@ -78,6 +81,7 @@ public class Manager : MonoBehaviour
         {
             RestartMessage.enabled = true;
             Destroy(step);
+            Destroy(Score);
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

@@ -44,7 +44,7 @@ public class Gem : MonoBehaviour
         if (Mathf.Abs(TargetX - transform.position.x) > .1)
         {
             tempPosition = new Vector2(TargetX, transform.position.y);
-            transform.position = Vector2.Lerp(transform.position, tempPosition, .4f);
+            transform.position = Vector2.Lerp(transform.position, tempPosition, 0.5f);
         } else
         {
             tempPosition = new Vector2(TargetX, transform.position.y);
@@ -55,7 +55,7 @@ public class Gem : MonoBehaviour
         if (Mathf.Abs(TargetY - transform.position.y) > .1)
         {
             tempPosition = new Vector2(transform.position.x, TargetY);
-            transform.position = Vector2.Lerp(transform.position, tempPosition, .4f);
+            transform.position = Vector2.Lerp(transform.position, tempPosition, 0.5f);
         }
         else
         {

@@ -317,6 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8330939cb7d661743b67d4647eabd3a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Splash: {fileID: 0}
   gems:
   - {fileID: 5533341792225054335, guid: 4994ed762cad0174bafa1cc26e8e814b, type: 3}
   - {fileID: 8027470707173981797, guid: 1eb461e58c85fa24fa0aa60b5e58f1bb, type: 3}
@@ -600,6 +601,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
+    - target: {fileID: 796308777053576085, guid: 6d367908f799c94479ee81457c4cd292,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 796308777053576087, guid: 6d367908f799c94479ee81457c4cd292,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -675,6 +681,11 @@ PrefabInstance:
       propertyPath: othergem
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 796308777053576086, guid: 6d367908f799c94479ee81457c4cd292,
+        type: 3}
+      propertyPath: Score
+      value: 
+      objectReference: {fileID: 474912433}
     - target: {fileID: 796308777213356660, guid: 6d367908f799c94479ee81457c4cd292,
         type: 3}
       propertyPath: m_Mesh
